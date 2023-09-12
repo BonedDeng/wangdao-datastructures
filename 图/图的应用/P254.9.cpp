@@ -1,44 +1,4 @@
-2021王道数据结构课后大题代码，使用Visual Studio编程。 考研时主要写的伪代码，记录一下自己将其代码数据结构的历程~  
- 代码仅供个人研究，及交流学习使用。  
-
-可不可以点个star呢~
-
-已完结的章节：  
-第二章 线性表  
-第三章 栈和队列  
-第五章 树与二叉树  
-第六章 图  
-第七章 查找  
-第八章 排序  
-  
-全书更新完毕~  
-好耶~   
-
-PS:
-第一章绪论与第四章串课后没有需要代码实现的题 
-
-历时3个多月，把21版王道数据结构的课后代码题全部实现了一遍，一共96道题
-
-![题目总数](https://img-blog.csdnimg.cn/2021031610114889.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3J1dmlrbQ==,size_16,color_FFFFFF,t_70#pic_center)
-
-![3个月](https://img-blog.csdnimg.cn/20210316101716209.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3J1dmlrbQ==,size_16,color_FFFFFF,t_70#pic_center)
-
- - 编程环境：Visual Studio 
- - 编程语言：C/C++
-
-其中，每道题都是一个独立的cpp文件，可以独立运行。在树和图的章节，会有输入样例和对应的示例图。
-
-cpp文件结构
-
- 1. 建立要求的数据结构
- 2. 题目说明
- 3. 题目要求的代码
- 4. 运行示例
-
-以树章节的题目示例：
-
-```cpp
-#include <iostream>
+﻿#include <iostream>
 #include <stack>
 #include <queue>
 #include <vector>
@@ -99,7 +59,7 @@ void CreateALGraph(ALGraph& G) {
         int vi = LocateVex(G, e1);
         int vj = LocateVex(G, e2);
 
-        e->adjvex = vj;                                 //这三步，类似于单链表的头插法
+        e->adjvex = vj;									//这三步，类似于单链表的头插法
         e->next = G.vertices[vi].first;
         G.vertices[vi].first = e;
     }
@@ -117,7 +77,7 @@ int j = 0;
 void DFS(ALGraph G, int i) {         
 
     ArcNode* p;
-    visited[i] = true;              
+    visited[i] = true;         		
     p = G.vertices[i].first;       
     while (p) {                    
         if (!visited[p->adjvex])    
@@ -132,7 +92,7 @@ void DFSTraverse(ALGraph G) {
     memset(visited, false, sizeof(visited));      
     _for(i, 0, G.vexnum)
         if (!visited[i])
-            DFS(G, i);                          
+            DFS(G, i);	            			
 }
 
 void Print_TopologicalSorting(ALGraph G) {
@@ -169,11 +129,3 @@ f f
 有向图链接：https://s3.ax1x.com/2021/02/23/yLASpT.png
 
 */
-```
-
-
-emm也是记录一下考研那段时光的数据结构的过程，留个回忆~
-希望一站成博
-
-顺便点个star呗~
-
