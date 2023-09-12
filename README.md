@@ -19,9 +19,7 @@ PS:
 
 历时3个多月，把21版王道数据结构的课后代码题全部实现了一遍，一共96道题
 
-![题目总数](https://img-blog.csdnimg.cn/2021031610114889.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3J1dmlrbQ==,size_16,color_FFFFFF,t_70#pic_center)
-
-![3个月](https://img-blog.csdnimg.cn/20210316101716209.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3J1dmlrbQ==,size_16,color_FFFFFF,t_70#pic_center)
+![题目总数]96
 
  - 编程环境：Visual Studio 
  - 编程语言：C/C++
@@ -35,7 +33,7 @@ cpp文件结构
  3. 题目要求的代码
  4. 运行示例
 
-以树章节的题目示例：
+以图章节的题目示例：
 
 ```cpp
 #include <iostream>
